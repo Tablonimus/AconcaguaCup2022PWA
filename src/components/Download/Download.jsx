@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import NavBar from "../NavBar/NavBar";
 
 export default function Download() {
   // const [supportsPWA, setSupportsPWA] = useState(false);
@@ -27,7 +28,9 @@ export default function Download() {
   //   return null;
   // }
   return (
-    <div className="bg-red-500 h-screen w-screen">DIV DE LA VERDAD</div>
+    <div className="flex flex-col justify-between gap-5  w-full items-center">
+      <NavBar/>
+    </div>
     // <button
     //   className="w-96 h-96"
     //   id="setup_button"

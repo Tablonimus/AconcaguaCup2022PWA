@@ -19,8 +19,13 @@ export default function NavBar() {
       </Navbar.Brand>
       <Navbar.Toggle />
       <Navbar.Collapse>
-        <Navbar.Link href="/">
+        <Navbar.Link href="/home">
           <span className="text-black hover:text-orange-600">Inicio</span>
+        </Navbar.Link>
+        <Navbar.Link href="/">
+          <span className="text-black hover:text-orange-600">
+            Descargar App
+          </span>
         </Navbar.Link>
         {/* <Navbar.Link href="/home">
           {" "}
