@@ -27,26 +27,6 @@ export default function NavBar() {
             Descargar App
           </span>
         </Navbar.Link>
-        {/* <Navbar.Link href="/home">
-          {" "}
-          <span className="text-black hover:text-orange-600">Fechas</span>{" "}
-        </Navbar.Link>
-        <Navbar.Link href="/navbars">
-          {" "}
-          <span className="text-black hover:text-orange-600">
-            FemAxSuela
-          </span>{" "}
-        </Navbar.Link>
-        <Navbar.Link href="/navbars">
-          {" "}
-          <span className="text-black hover:text-orange-600">
-            A1xSuela
-          </span>{" "}
-        </Navbar.Link>
-        <Navbar.Link href="/navbars">
-          {" "}
-          <span className="text-black hover:text-orange-600">Nada</span>{" "}
-        </Navbar.Link> */}
       </Navbar.Collapse>
     </Navbar>
   );

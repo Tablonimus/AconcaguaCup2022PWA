@@ -37,14 +37,14 @@ export default function Download() {
         copyBody="Agrega a Aconcagua Cup 2022 al menú principal."
         permanentlyHideOnDismiss={false}
       />
-      <div className="bg-[#14ABD5] justify-center mt-24 rounded-lg flex flex-col items-center">
+      <div className="bg-[#14ABD5] justify-between mt-24 rounded-lg flex flex-col items-center">
         <button
           className="p-5 font-bold bg-[#F6D50E] m-5 rounded-lg shadow-lg"
           onClick={(e) => handlerNotification(e)}
         >
           🔔 ACTIVAR NOTIFICACIONES 🔔
         </button>
-        {!install || install === false ? (
+        {!install ? (
           <div className="flex flex-col items-center rounded-lg bg-gray-300 w-96 h-56 m-5 p-5 border justify-center opacity-80 shadow-lg">
             <h1 className="text-black font-bold items-center justify-center">
               {" "}

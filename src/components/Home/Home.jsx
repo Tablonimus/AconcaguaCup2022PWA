@@ -8,8 +8,6 @@ import FootComp from "../Footer/FootComp";
 import Carru from "../Carru/Carru";
 import Carru2 from "../Carru/Carru2";
 
-
-
 // // Import the functions you need from the SDKs you need
 // import { initializeApp } from "firebase/app";
 // import { getAnalytics } from "firebase/analytics";
@@ -17,8 +15,6 @@ import Carru2 from "../Carru/Carru2";
 // // https://firebase.google.com/docs/web/setup#available-libraries
 
 export default function Home() {
-
-
   //   const firebaseConfig = {
   //     apiKey: "AIzaSyC1lGJhal8qgTomc0rV-l6wvUZHux46x-g",
   //     authDomain: "aconcagua-cup-2022.firebaseapp.com",
@@ -41,7 +37,6 @@ export default function Home() {
       <Cronograma />
       <div className="w-full  rounded-lg   flex flex-col lg:grid lg:grid-cols-2  justify-center items-center">
         <div className="w-full  bg-[#F6D50E] rounded-b-lg lg:rounded-none  py-2 h-96 flex flex-col">
-         
           <Carru2 />
         </div>
 
