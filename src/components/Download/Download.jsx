@@ -5,6 +5,7 @@ import PWAPrompt from "react-ios-pwa-prompt";
 import { usePWAInstall } from "react-use-pwa-install";
 import Push from "push.js";
 import FootComp from "../Footer/FootComp";
+import ico from "../../assets/images/favicon.png";
 
 export default function Download() {
   const install = usePWAInstall();
@@ -12,7 +13,15 @@ export default function Download() {
   function handlerNotification(e) {
     e.preventDefault();
 
-    Push.create("Las notificaciones fueron activadas con éxito");
+    Push.create("Bienvenido a Aconcagua Cup!", {
+      body: "Las notificaciones fueron activadas correctamente!",
+      icon: "./favicon.png",
+      timeout: 4000,
+      onClick: function () {
+        window.focus();
+        this.close();
+      },
+    });
   }
 
   return (
