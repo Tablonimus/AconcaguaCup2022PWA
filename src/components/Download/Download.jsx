@@ -34,7 +34,7 @@ export default function Download() {
         ) : (
           install && (
             <button
-              className="w-24 font-bold h-24 mt-96 bg-[#14ABD5] rounded-lg"
+              className="w-24 font-bold h-24 mt-96 bg-[#14ABD5] rounded-lg shadow-lg"
               onClick={install}
             >
               Instalar Aplicación

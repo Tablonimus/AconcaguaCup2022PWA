@@ -7,7 +7,7 @@ import map from "../../assets/images/map.png";
 export default function Cronograma() {
   return (
     <div className="bg-white flex mb-3 mt-24 flex-col w-full  items-center rounded-b-lg">
-      <h5 className="font-bold text-black">Cronograma</h5>
+      <h5 className="font-bold text-black">Cronogramaaaaaaaaaa</h5>
       <Tabs.Group aria-label="Tabs with icons" style="underline">
         <Tabs.Item
           title="Mie 02/11"
