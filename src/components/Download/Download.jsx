@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import NavBar from "../NavBar/NavBar";
 import { Link } from "react-router-dom";
 import PWAPrompt from "react-ios-pwa-prompt";
 import { usePWAInstall } from "react-use-pwa-install";
+
 
 export default function Download() {
   const install = usePWAInstall();
@@ -21,6 +22,7 @@ export default function Download() {
         permanentlyHideOnDismiss={false}
       />
       <div>
+     
         {!install ? (
           <>
             <h1 className="text-black font-bold">

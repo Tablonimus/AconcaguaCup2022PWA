@@ -1,6 +1,6 @@
 import React from "react";
 import header from "../../assets/images/header.png";
-import { Navbar } from "flowbite-react";
+
 
 export default function Header() {
   return (

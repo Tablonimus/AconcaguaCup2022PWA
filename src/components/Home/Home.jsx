@@ -1,22 +1,20 @@
 import React from "react";
 import Header from "../NavBar/Header";
 import NavBar from "../NavBar/NavBar";
-import header from "../../assets/images/header.png";
-import { Link } from "react-router-dom";
-import { Tabs } from "flowbite-react";
+
 import Cronograma from "../Cronograma/Cronograma";
-import { Carousel } from "flowbite-react";
+
 import FootComp from "../Footer/FootComp";
 import Carru from "../Carru/Carru";
 import Carru2 from "../Carru/Carru2";
-import h1 from "../../assets/images/h1.jpg";
-import h2 from "../../assets/images/h2.jpg";
-import h3 from "../../assets/images/h3.jpg";
-import h4 from "../../assets/images/h4.jpg";
-import h5 from "../../assets/images/h5.jpg";
-import h6 from "../../assets/images/h6.jpg";
-import h7 from "../../assets/images/h7.jpg";
+
 // import Push from "push.js";
+
+// // Import the functions you need from the SDKs you need
+// import { initializeApp } from "firebase/app";
+// import { getAnalytics } from "firebase/analytics";
+// // TODO: Add SDKs for Firebase products that you want to use
+// // https://firebase.google.com/docs/web/setup#available-libraries
 
 export default function Home() {
   // function handlerNotification(e) {
@@ -24,6 +22,23 @@ export default function Home() {
   //   console.log("click");
   //   Push.create("Hello World!");
   // }
+
+  //   const firebaseConfig = {
+  //     apiKey: "AIzaSyC1lGJhal8qgTomc0rV-l6wvUZHux46x-g",
+  //     authDomain: "aconcagua-cup-2022.firebaseapp.com",
+  //     projectId: "aconcagua-cup-2022",
+  //     storageBucket: "aconcagua-cup-2022.appspot.com",
+  //     messagingSenderId: "333388205840",
+  //     appId: "1:333388205840:web:99b0702ec49f8a99131f95",
+  //     measurementId: "G-RLC7RHDQCY"
+  //   };
+  //   // Initialize Firebase
+  // const app = initializeApp(firebaseConfig);
+  // const analytics = getAnalytics(app);
+
+  // // app()
+  // // analytics()
+
   return (
     <div className="flex flex-col justify-between gap-5  w-full items-center">
       <NavBar />
