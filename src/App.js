@@ -11,10 +11,9 @@ function App() {
   return (
     <BrowserRouter>
       <Routes /*  history={history} */>
-        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/cronograma" element={<Cronograma />} />
-        <Route path="/download" element={<Download />} />
-
+        <Route path="/" element={<Download />} />
       </Routes>
     </BrowserRouter>
   );
