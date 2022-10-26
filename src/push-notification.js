@@ -2,7 +2,7 @@
 // import firebase from "firebase";
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-import { getMessaging } from "firebase/messaging";//
+import { getMessaging } from "firebase/messaging"; //
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -22,8 +22,10 @@ const firebaseConfig = {
 export const app = initializeApp(firebaseConfig);
 export const analytics = getAnalytics(app);
 
-
 // Initialize Firebase Cloud Messaging and get a reference to the service
 const messaging = getMessaging(app);
 // Add the public key generated from the console here.
-messaging.getToken({vapidKey: "BPGOHol8olZDPHqQy3NNlI43ij0QCA5Ev0su-aSHjmcWnw8iySmUKy3rWg9Z8dLR7BF0IB41v6yVnr4jOXV3l10"});
+messaging.getToken({
+  vapidKey:
+    "BPGOHol8olZDPHqQy3NNlI43ij0QCA5Ev0su-aSHjmcWnw8iySmUKy3rWg9Z8dLR7BF0IB41v6yVnr4jOXV3l10",
+});

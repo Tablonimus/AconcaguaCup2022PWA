@@ -8,7 +8,7 @@ import FootComp from "../Footer/FootComp";
 import Carru from "../Carru/Carru";
 import Carru2 from "../Carru/Carru2";
 
-// import Push from "push.js";
+
 
 // // Import the functions you need from the SDKs you need
 // import { initializeApp } from "firebase/app";
@@ -17,11 +17,7 @@ import Carru2 from "../Carru/Carru2";
 // // https://firebase.google.com/docs/web/setup#available-libraries
 
 export default function Home() {
-  // function handlerNotification(e) {
-  //   e.preventDefault();
-  //   console.log("click");
-  //   Push.create("Hello World!");
-  // }
+
 
   //   const firebaseConfig = {
   //     apiKey: "AIzaSyC1lGJhal8qgTomc0rV-l6wvUZHux46x-g",
@@ -45,12 +41,7 @@ export default function Home() {
       <Cronograma />
       <div className="w-full  rounded-lg   flex flex-col lg:grid lg:grid-cols-2  justify-center items-center">
         <div className="w-full  bg-[#F6D50E] rounded-b-lg lg:rounded-none  py-2 h-96 flex flex-col">
-          {/* <button
-            className="w-56 h-56 rounded-lg bg-red-200"
-            onClick={(e) => handlerNotification(e)}
-          >
-            SUSCRIBITE A LAS NOTIFICACIONES
-          </button> */}
+         
           <Carru2 />
         </div>
 

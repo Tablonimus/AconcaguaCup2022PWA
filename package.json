@@ -9,6 +9,7 @@
     "firebase": "^9.12.1",
     "flowbite": "^1.5.3",
     "flowbite-react": "^0.3.2",
+    "push.js": "^1.0.12",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-ios-pwa-prompt": "^1.8.4",
