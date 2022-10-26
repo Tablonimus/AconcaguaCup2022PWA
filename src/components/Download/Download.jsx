@@ -22,7 +22,7 @@ export default function Download() {
       <div>
         <h1>My app</h1>
         {install && (
-          <button className="w-24 h-24 rounded-lg" onClick={install}>
+          <button className="w-24 h-24 mt-96 rounded-lg" onClick={install}>
             Instalar Aplicación
           </button>
         )}{" "}
