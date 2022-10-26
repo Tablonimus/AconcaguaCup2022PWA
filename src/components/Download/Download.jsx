@@ -5,7 +5,6 @@ import PWAPrompt from "react-ios-pwa-prompt";
 import { usePWAInstall } from "react-use-pwa-install";
 import Push from "push.js";
 import FootComp from "../Footer/FootComp";
-import ico from "../../assets/images/favicon.png";
 
 export default function Download() {
   const install = usePWAInstall();
