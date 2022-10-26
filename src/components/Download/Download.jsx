@@ -21,16 +21,19 @@ export default function Download() {
         permanentlyHideOnDismiss={false}
       />
       <div>
-        <h1>My app</h1>
         {!install ? (
-         
-         <Link to="/home"><button
-            className="p-5 font-bold mt-96 bg-[#14ABD5] rounded-lg"
-          
-          >
-            Esta aplicación ya esta descargada en su dispositivo{" "}
-          </button>
-          </Link>
+          <>
+            <h1 className="text-black font-bold">
+              {" "}
+              Esta aplicación ya esta descargada en su dispositivo
+            </h1>
+
+            <Link to="/home">
+              <button className="p-5 font-bold mt-96 bg-[#14ABD5] rounded-lg">
+                Ir al Inicio
+              </button>
+            </Link>
+          </>
         ) : (
           install && (
             <button
