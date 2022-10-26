@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import NavBar from "../NavBar/NavBar";
+import { Link } from "react-router-dom";
 import PWAPrompt from "react-ios-pwa-prompt";
 import { usePWAInstall } from "react-use-pwa-install";
 
@@ -21,10 +22,24 @@ export default function Download() {
       />
       <div>
         <h1>My app</h1>
-        {install && (
-          <button className="w-24 h-24 mt-96 bg-[#14ABD5] rounded-lg" onClick={install}>
-            Instalar Aplicación
+        {!install ? (
+         
+         <Link to="/home"><button
+            className="p-5 font-bold mt-96 bg-[#14ABD5] rounded-lg"
+          
+          >
+            Esta aplicación ya esta descargada en su dispositivo{" "}
           </button>
+          </Link>
+        ) : (
+          install && (
+            <button
+              className="w-24 font-bold h-24 mt-96 bg-[#14ABD5] rounded-lg"
+              onClick={install}
+            >
+              Instalar Aplicación
+            </button>
+          )
         )}{" "}
       </div>
     </div>
