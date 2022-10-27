@@ -35,11 +35,25 @@ export default function Download() {
     });
   }, []);
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      loguearse();
+    }, 1000);
+    return () => clearTimeout(timer);
+  }, []);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      activateMessages();
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, []);
+
+ 
+
   const install = usePWAInstall();
 
   async function handlerNotification(e) {
     e.preventDefault();
-    loguearse().then(activateMessages());
 
     Push.create("Bienvenido a Aconcagua Cup!", {
       body: "Las notificaciones fueron activadas correctamente!",
@@ -67,12 +81,12 @@ export default function Download() {
       />
       <ToastContainer />
 
-      <button className="mt-24 w-20 h-20 bg-red-200" onClick={loguearse}>
+      {/* <button className="mt-24 w-20 h-20 bg-red-200" onClick={loguearse}>
         Loguearse
       </button>
       <button className="mt-24 w-20 h-20 bg-red-200" onClick={activateMessages}>
         Generar Token
-      </button>
+      </button> */}
       <div className="bg-[#14ABD5] justify-between mt-24 rounded-lg flex flex-col items-center">
         <button
           className="p-5 font-bold bg-[#F6D50E] m-5 rounded-lg shadow-lg"
