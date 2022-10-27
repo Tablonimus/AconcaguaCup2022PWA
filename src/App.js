@@ -4,7 +4,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Cronograma from "./components/Cronograma/Cronograma";
 import Download from "./components/Download/Download";
 
-// import { createBrowserHistory } from "history";
+
+
+
 
 function App() {
   // const  history = createBrowserHistory();

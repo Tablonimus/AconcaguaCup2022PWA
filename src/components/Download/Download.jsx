@@ -6,11 +6,40 @@ import { usePWAInstall } from "react-use-pwa-install";
 import Push from "push.js";
 import FootComp from "../Footer/FootComp";
 
+import { getAuth, signInAnonymously } from "firebase/auth";
+import { getToken, onMessage } from "firebase/messaging";
+import { messaging } from "../../firebase";
+import { ToastContainer, toast } from "react-toastify";
+
+import { useEffect } from "react";
+
 export default function Download() {
+  const loguearse = () => {
+    signInAnonymously(getAuth()).then((usuario) => console.log(usuario));
+  };
+
+  const activateMessages = async () => {
+    const token = await getToken(messaging, {
+      vapidKey:
+        "BF_yiFPJrWPiEClx5M83PzDpejdtnt8Zmaa4lzyMF2OMmt6B2Fv4Gq5j4hKkBsHIrxjmYEglRDy8fLYEyYqbVmY",
+    }).catch((error) => console.log("Tuviste un error al generar el token"));
+
+    if (token) console.log("el token", token);
+    if (!token) console.log("el token no esta");
+  };
+
+  useEffect(() => {
+    onMessage(messaging, (message) => {
+      console.log("tu mensaje: ,", message);
+      toast(message.notification.title);
+    });
+  }, []);
+
   const install = usePWAInstall();
 
-  function handlerNotification(e) {
+  async function handlerNotification(e) {
     e.preventDefault();
+    loguearse().then(activateMessages());
 
     Push.create("Bienvenido a Aconcagua Cup!", {
       body: "Las notificaciones fueron activadas correctamente!",
@@ -36,10 +65,19 @@ export default function Download() {
         copyBody="Agrega a Aconcagua Cup 2022 al menú principal."
         permanentlyHideOnDismiss={false}
       />
+      <ToastContainer />
+
+      <button className="mt-24 w-20 h-20 bg-red-200" onClick={loguearse}>
+        Loguearse
+      </button>
+      <button className="mt-24 w-20 h-20 bg-red-200" onClick={activateMessages}>
+        Generar Token
+      </button>
       <div className="bg-[#14ABD5] justify-between mt-24 rounded-lg flex flex-col items-center">
         <button
           className="p-5 font-bold bg-[#F6D50E] m-5 rounded-lg shadow-lg"
           onClick={(e) => handlerNotification(e)}
+          // onClick={activateMessages}
         >
           🔔 ACTIVAR NOTIFICACIONES 🔔
         </button>
