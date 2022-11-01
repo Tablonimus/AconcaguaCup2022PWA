@@ -1,7 +1,7 @@
 import React from "react";
 import NavBar from "../NavBar/NavBar";
 import { Link } from "react-router-dom";
-
+import PWAPrompt from "react-ios-pwa-prompt";
 import Push from "push.js";
 import FootComp from "../Footer/FootComp";
 
@@ -30,7 +30,6 @@ export default function Notif() {
 
   useEffect(() => {
     onMessage(messaging, (message) => {
-      console.log("tu mensaje: ,", message);
       toast(message.notification.title);
     });
   }, []);
@@ -65,7 +64,16 @@ export default function Notif() {
   return (
     <div className="flex flex-col justify-between h-screen w-full items-center">
       <NavBar />
-
+      <PWAPrompt
+        promptOnVisit={1}
+        timesToShow={3}
+        copyShareButtonLabel="1) Presiona el botón compartir en la esquina superior derecha ↑."
+        copyAddHomeButtonLabel="2) Presiona para descargar."
+        copyClosePrompt="Mas Tarde"
+        copyTitle="Descargar APP"
+        copyBody="Agrega a Aconcagua Cup 2022 al menú principal."
+        permanentlyHideOnDismiss={false}
+      />
       <div className="bg-gray-200 mt-24 justify-around items-center rounded-lg flex flex-col items-center w-3/4 h-1/2">
         <Link to="/home">
           <div className="flex flex-row items-center bg-gray-300 shadow-lg rounded-lg border border-black p-2">
