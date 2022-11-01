@@ -1,8 +1,7 @@
 import React from "react";
 import NavBar from "../NavBar/NavBar";
 import { Link } from "react-router-dom";
-import PWAPrompt from "react-ios-pwa-prompt";
-import { usePWAInstall } from "react-use-pwa-install";
+
 import Push from "push.js";
 import FootComp from "../Footer/FootComp";
 
@@ -10,6 +9,7 @@ import { getAuth, signInAnonymously } from "firebase/auth";
 import { getToken, onMessage } from "firebase/messaging";
 import { messaging } from "../../firebase";
 import { ToastContainer, toast } from "react-toastify";
+import flecha from "../../assets/images/flecha.png";
 
 import { useEffect } from "react";
 
@@ -48,14 +48,12 @@ export default function Notif() {
     return () => clearTimeout(timer);
   }, []);
 
-  const install = usePWAInstall();
-
   async function handlerNotification(e) {
     e.preventDefault();
 
     Push.create("Bienvenido a Aconcagua Cup!", {
       body: "Las notificaciones fueron activadas correctamente!",
-      icon: "./favicon.png",
+      icon: "./acbg.png",
       timeout: 4000,
       onClick: function () {
         window.focus();
@@ -69,12 +67,20 @@ export default function Notif() {
       <NavBar />
 
       <div className="bg-gray-200 mt-24 justify-around items-center rounded-lg flex flex-col items-center w-3/4 h-1/2">
+        <Link to="/home">
+          <div className="flex flex-row items-center bg-gray-300 shadow-lg rounded-lg border border-black p-2">
+            <img src={flecha} alt="" />
+            <h5 className="font-bold">Volver Atras</h5>
+          </div>
+        </Link>
 
-        <div className="rounded-lg ring p-5 m-2">
-          <h5 className="font-bold">17:40 - Notificación para exequiel</h5>
-        </div>
-        <div className="rounded-lg ring p-5 m-2">
-          <h5 className="font-bold">18:00 - Reunion con Ariel</h5>
+        <div className="flex flex-col gap-2">
+          <div className="bg-gray-100 rounded-lg shadow-lg ring p-5 m-2">
+            <h5 className="font-bold">17:40 - Notificación para exequiel</h5>
+          </div>
+          <div className="bg-gray-100 rounded-lg shadow-lg ring p-5 m-2">
+            <h5 className="font-bold">18:00 - Reunion con Ariel</h5>
+          </div>
         </div>
       </div>
       <button
