@@ -71,7 +71,10 @@ export default function Notif() {
       <div className="bg-gray-200 mt-24 justify-around items-center rounded-lg flex flex-col items-center w-3/4 h-1/2">
 
         <div className="rounded-lg ring p-5 m-2">
-          <h5 className="font-bold">No hay notificaciones nuevas</h5>
+          <h5 className="font-bold">17:40 - Notificación para exequiel</h5>
+        </div>
+        <div className="rounded-lg ring p-5 m-2">
+          <h5 className="font-bold">18:00 - Reunion con Ariel</h5>
         </div>
       </div>
       <button

@@ -55,7 +55,7 @@ export default function Download() {
 
     Push.create("Bienvenido a Aconcagua Cup!", {
       body: "Las notificaciones fueron activadas correctamente!",
-      icon: "./favicon.png",
+      icon: "./acbg.png",
       timeout: 4000,
       onClick: function () {
         window.focus();
