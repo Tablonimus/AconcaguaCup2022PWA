@@ -101,7 +101,7 @@ export default function Download() {
 
             <Link to="/home">
               <button className="p-5 font-bold bg-[#14ABD5] rounded-lg shadow-lg">
-                Ir a la página web
+                Ir al Inicio
               </button>
             </Link>
           </div>
