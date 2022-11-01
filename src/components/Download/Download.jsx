@@ -48,8 +48,6 @@ export default function Download() {
     return () => clearTimeout(timer);
   }, []);
 
- 
-
   const install = usePWAInstall();
 
   async function handlerNotification(e) {
@@ -79,7 +77,6 @@ export default function Download() {
         copyBody="Agrega a Aconcagua Cup 2022 al menú principal."
         permanentlyHideOnDismiss={false}
       />
-      <ToastContainer />
 
       {/* <button className="mt-24 w-20 h-20 bg-red-200" onClick={loguearse}>
         Loguearse
@@ -104,7 +101,7 @@ export default function Download() {
 
             <Link to="/home">
               <button className="p-5 font-bold bg-[#14ABD5] rounded-lg shadow-lg">
-                Ir al Inicio
+                Ir a la página web
               </button>
             </Link>
           </div>

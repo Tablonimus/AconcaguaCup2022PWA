@@ -7,7 +7,7 @@ import map from "../../assets/images/map.png";
 export default function Cronograma() {
   return (
     <div className="bg-white flex mb-3 mt-24 flex-col w-full  items-center rounded-b-lg">
-      <h5 className="font-bold text-black">cronos1</h5>
+      <h5 className="font-bold text-black">Cronograma</h5>
       <Tabs.Group aria-label="Tabs with icons" style="underline">
         <Tabs.Item
           title="Mie 02/11"
@@ -122,7 +122,7 @@ export default function Cronograma() {
               <h5> Aconcagualandia en "Canchas Mathus"</h5>
               <a
                 target="_blank"
-                href="https://www.google.com/maps/place/Banco+Rugby+Club/@-32.8892743,-68.7501503,15z/data=!4m5!3m4!1s0x0:0x9f2dad5ed9be76e7!8m2!3d-32.8892743!4d-68.7501503"
+                href="https://maps.app.goo.gl/b3qTZN2HRJfVY7eT9?g_st=iw"
               >
                 <div className="flex items-center mb-2">
                   <img src={map} alt="" className="w-5" />
@@ -142,7 +142,7 @@ export default function Cronograma() {
               <h5>Cierre en "Aguas del Pizarro"</h5>
               <a
                 target="_blank"
-                href="https://www.google.com/maps/place/Estadio+Malvinas+Argentinas/@-32.8896642,-68.8800956,15z/data=!4m2!3m1!1s0x0:0x684a90ae779e7723?sa=X&ved=2ahUKEwiCmd2Uo_X6AhWhQ7gEHS7oCt8Q_BJ6BAhHEAU"
+                href="https://www.google.com/maps/place/Aguas+del+Pizarro+Cacheuta/@-33.0313849,-69.1113062,17.25z/data=!4m5!3m4!1s0x967e085c1da53d77:0x850a00ae94bf098e!8m2!3d-33.0314206!4d-69.1091626?hl=es-CL"
               >
                 <div className="flex items-center mb-2 ">
                   <img src={map} alt="" className="w-5 rounded-full" />
