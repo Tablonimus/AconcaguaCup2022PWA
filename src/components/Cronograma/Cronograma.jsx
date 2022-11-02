@@ -47,7 +47,7 @@ import tp from "../../assets/escudos/talentoPetorquino.png";
 import tp1 from "../../assets/pdf_documents/TALENTO PETORQUINO.pdf";
 
 import alm from "../../assets/escudos/almafuerte.png";
-import alm1 from "../../assets/pdf_documents/ALMAFUERTE.xlsx";
+import alm1 from "../../assets/pdf_documents/ALMAFUERTE.pdf";
 
 export default function Cronograma() {
   return (
@@ -229,7 +229,7 @@ export default function Cronograma() {
                 href={alm1}
                 target="_blank"
                 rel="alm"
-                download="ALMAFUERTE.xlsx"
+                download="ALMAFUERTE.pdf"
                 className="flex flex-col border-x p-2 items-center"
               >
                 <span className="flex items-center justify-center flex-col ">
