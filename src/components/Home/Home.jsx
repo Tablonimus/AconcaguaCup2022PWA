@@ -35,16 +35,7 @@ export default function Home() {
   return (
     <div className="flex flex-col justify-between gap-5  w-full items-center">
       <NavBar />
-      <PWAPrompt
-        promptOnVisit={1}
-        timesToShow={3}
-        copyShareButtonLabel="1) Presiona el botón compartir en la esquina superior derecha ↑."
-        copyAddHomeButtonLabel="2) Presiona para descargar."
-        copyClosePrompt="Mas Tarde"
-        copyTitle="Descargar APP"
-        copyBody="Agrega a Aconcagua Cup 2022 al menú principal."
-        permanentlyHideOnDismiss={false}
-      />
+     
       <div className="opacity-100 flex flex-row fixed bottom-5 right-5 lg:bottom-20 lg:right-24 z-30 items-center justify-center bg-[#F6D50E] w-14 h-14 rounded-full shadow-lg border ring ring-red-500 border-[#14ABD5]">
         <Link to="/notification">
           <button className="rounded-full font-serif">
