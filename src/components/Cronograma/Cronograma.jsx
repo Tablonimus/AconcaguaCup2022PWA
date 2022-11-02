@@ -53,7 +53,7 @@ export default function Cronograma() {
   return (
     <div className="mt-24 flex items center">
       <Tabs.Group aria-label="Tabs with icons" style="underline">
-        <Tabs.Item title="Generál" /*icon={map}*/>
+        <Tabs.Item title="General" /*icon={map}*/>
           <div className="bg-white flex mb-3 flex-col items-center rounded-b-lg">
             {/*   <h5 className="font-bold text-black">Cronograma</h5> */}
             <Tabs.Group aria-label="Tabs with icons" style="underline">
