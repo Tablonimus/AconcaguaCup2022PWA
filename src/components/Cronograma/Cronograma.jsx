@@ -66,7 +66,8 @@ export default function Cronograma() {
                   <div className="flex flex-col items-center border-y border-[#14ABD5]">
                     <h5 className="font-bold">08:30hs a 11:00hs</h5>
                     <h5>
-                      Entrega de Acreditaciones en "Estadio Malvinas Argentinas"
+                      Entrega de Acreditaciones y Visita en "Estadio Malvinas
+                      Argentinas"
                     </h5>
                     <a
                       target="_blank"
@@ -81,8 +82,8 @@ export default function Cronograma() {
                     </a>
                   </div>
                   <div className="flex flex-col items-center border-y border-[#14ABD5]">
-                    <h5 className="font-bold"> 20:00hs a 22:00hs:</h5>
-                    <h5>Acto inaugural en "Banco Rugby Club"</h5>
+                    <h5 className="font-bold"> 19:00hs</h5>
+                    <h5>Desfile y Ceremonia inaugural en "Banco Rugby Club"</h5>
                     <a
                       target="_blank"
                       href="https://www.google.com/maps/place/Banco+Rugby+Club/@-32.8892743,-68.7501503,15z/data=!4m5!3m4!1s0x0:0x9f2dad5ed9be76e7!8m2!3d-32.8892743!4d-68.7501503"
@@ -105,7 +106,7 @@ export default function Cronograma() {
                 <div className="flex flex-col items-center">
                   {/* Hace Click en el evento para conocer la ubicación */}
                   <div className="flex flex-col items-center border-y border-[#14ABD5]">
-                    <h5 className="font-bold">15:00hs a 20:00hs</h5>
+                    <h5 className="font-bold">15:00hs</h5>
                     <h5>Jornada Deportiva en "Banco Rugby Club"</h5>
                     <a
                       target="_blank"
@@ -128,11 +129,26 @@ export default function Cronograma() {
                 <div className="flex flex-col items-center">
                   {/* Hace Click en el evento para conocer la ubicación */}
                   <div className="flex flex-col items-center border-y border-[#14ABD5]">
-                    <h5 className="font-bold">09:00hs a 12:00hs</h5>
+                    <h5 className="font-bold">Por la Mañana</h5>
                     <h5>Guía por "Fábrica Chocolezza"</h5>
                     <a
                       target="_blank"
                       href="https://www.google.com/maps/place/Chocolezza+SRL/@-32.8667857,-68.8298676,3a,77.3y/data=!3m8!1e2!3m6!1sAF1QipNcDNVUPseTlOMgwV936XhfJpMr4vrdG5aEZfbK!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipNcDNVUPseTlOMgwV936XhfJpMr4vrdG5aEZfbK%3Dw153-h86-k-no!7i1280!8i719!4m9!1m2!2m1!1sChocolezza!3m5!1s0x967e08c36dc2907b:0x5d3d520d819e84df!8m2!3d-32.8669044!4d-68.8298682!15sCgpDaG9jb2xlenphWgwiCmNob2NvbGV6emGSARFjaG9jb2xhdGVfZmFjdG9yeeABAA"
+                    >
+                      <div className="flex items-center mb-2 ">
+                        <img src={map} alt="" className="w-5 rounded-full" />
+                        <h5 className=" text-sm font-semibold border-b border-[#14ABD5]">
+                          "Ver en el mapa"
+                        </h5>
+                      </div>
+                    </a>
+                  </div>
+                  <div className="flex flex-col items-center border-y border-[#14ABD5]">
+                    <h5 className="font-bold">15:00hs</h5>
+                    <h5>Jornada Deportiva en "Banco Rugby Club"</h5>
+                    <a
+                      target="_blank"
+                      href="https://www.google.com/maps/place/Banco+Rugby+Club/@-32.8892743,-68.7501503,15z/data=!4m5!3m4!1s0x0:0x9f2dad5ed9be76e7!8m2!3d-32.8892743!4d-68.7501503"
                     >
                       <div className="flex items-center mb-2 ">
                         <img src={map} alt="" className="w-5 rounded-full" />
@@ -151,7 +167,7 @@ export default function Cronograma() {
                 <div className="flex flex-col items-center">
                   {/* Hace Click en el evento para conocer la ubicación */}
                   <div className="flex flex-col items-center border-y border-[#14ABD5]">
-                    <h5 className="font-bold">09:00hs a 14:00hs</h5>
+                    <h5 className="font-bold">08:30hs a 14:00hs</h5>
                     <h5>Finales y premiación en "Banco Rugby Club"</h5>
                     <a
                       target="_blank"
@@ -166,7 +182,7 @@ export default function Cronograma() {
                     </a>
                   </div>
                   <div className="flex flex-col items-center border-y border-[#14ABD5]">
-                    <h5 className="font-bold">20:00hs a 22:00hs:</h5>
+                    <h5 className="font-bold">20:00hs a 00:30hs</h5>
                     <h5> Aconcagualandia en "Canchas Mathus"</h5>
                     <a
                       target="_blank"
@@ -186,7 +202,7 @@ export default function Cronograma() {
                 <div className="flex flex-col items-center">
                   {/* Hace Click en el evento para conocer la ubicación */}
                   <div className="flex flex-col items-center border-y border-[#14ABD5]">
-                    <h5 className="font-bold">09:00hs a 14:00hs</h5>
+                    <h5 className="font-bold">09:00hs</h5>
                     <h5>Cierre en "Aguas del Pizarro"</h5>
                     <a
                       target="_blank"
