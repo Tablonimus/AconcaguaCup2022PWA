@@ -84,11 +84,11 @@ export default function Notif() {
 
         <div className="flex flex-col gap-2">
           <div className="bg-gray-100 rounded-lg shadow-lg ring p-5 m-2">
-            <h5 className="font-bold">17:40 - Notificación para exequiel</h5>
+            <h5 className="font-bold">08:00 - Buenos Dias!</h5>
           </div>
-          <div className="bg-gray-100 rounded-lg shadow-lg ring p-5 m-2">
+          {/*    <div className="bg-gray-100 rounded-lg shadow-lg ring p-5 m-2">
             <h5 className="font-bold">18:00 - Reunion con Ariel</h5>
-          </div>
+          </div> */}
         </div>
       </div>
       <button

@@ -53,7 +53,7 @@ export default function Cronograma() {
   return (
     <div className="mt-24 flex items center">
       <Tabs.Group aria-label="Tabs with icons" style="underline">
-        <Tabs.Item active={true} title="Generál" /*icon={map}*/>
+        <Tabs.Item title="Generál" /*icon={map}*/>
           <div className="bg-white flex mb-3 flex-col items-center rounded-b-lg">
             {/*   <h5 className="font-bold text-black">Cronograma</h5> */}
             <Tabs.Group aria-label="Tabs with icons" style="underline">
@@ -81,10 +81,8 @@ export default function Cronograma() {
                     </a>
                   </div>
                   <div className="flex flex-col items-center border-y border-[#14ABD5]">
-                    <h5 className="font-bold">08:30hs a 11:00hs:</h5>
-                    <h5>
-                      20:00hs a 22:00hs: Acto inaugural en "Banco Rugby Club"
-                    </h5>
+                    <h5 className="font-bold"> 20:00hs a 22:00hs:</h5>
+                    <h5>Acto inaugural en "Banco Rugby Club"</h5>
                     <a
                       target="_blank"
                       href="https://www.google.com/maps/place/Banco+Rugby+Club/@-32.8892743,-68.7501503,15z/data=!4m5!3m4!1s0x0:0x9f2dad5ed9be76e7!8m2!3d-32.8892743!4d-68.7501503"
@@ -207,7 +205,7 @@ export default function Cronograma() {
             </Tabs.Group>
           </div>
         </Tabs.Item>
-        <Tabs.Item  title="Descargar Cronograma" /*icon={map}*/>
+        <Tabs.Item active={true} title="Descargar Cronograma" /*icon={map}*/>
           <div className="flex flex-col items-center">
             <h5 className="mb-2">Descarga los horarios de tu equipo</h5>
             <div className="grid grid-cols-4 items-center gap-y-1">
@@ -454,9 +452,7 @@ export default function Cronograma() {
             </div>
           </div>
         </Tabs.Item>
-        <Tabs.Item title="Partidos" /* icon={map} */>
-          
-        </Tabs.Item>
+        <Tabs.Item title="Partidos" /* icon={map} */></Tabs.Item>
       </Tabs.Group>
     </div>
   );

@@ -96,7 +96,7 @@ export default function Download() {
           <div className="flex flex-col items-center rounded-lg bg-gray-300 w-96 h-56 m-5 p-5 border justify-center opacity-80 shadow-lg">
             <h1 className="text-black font-bold items-center justify-center">
               {" "}
-              Esta aplicación ya esta descargada en su dispositivo.
+           
             </h1>
 
             <Link to="/home">
