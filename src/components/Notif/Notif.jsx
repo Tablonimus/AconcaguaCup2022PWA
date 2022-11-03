@@ -64,9 +64,9 @@ export default function Notif() {
   return (
     <div className="flex flex-col justify-between h-screen w-full items-center">
       <NavBar />
-    
+
       <div className="bg-gray-200 mt-24 justify-around items-center rounded-lg flex flex-col items-center w-3/4 h-1/2">
-        <Link to="/home">
+        <Link to="/">
           <div className="flex flex-row items-center bg-gray-300 shadow-lg rounded-lg border border-black p-2">
             <img src={flecha} alt="" />
             <h5 className="font-bold">Volver Atras</h5>

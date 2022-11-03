@@ -10,7 +10,7 @@ export default function NavBar() {
       fluid={true}
       rounded={true}
     >
-      <Navbar.Brand href="/home">
+      <Navbar.Brand href="/">
         <span className="flex items-center ml-2 self-center whitespace-nowrap text-xl font-semibold text-white">
           <img src={ac} className="h-20 rounded-full flex" alt="Logo" />
         </span>
@@ -18,7 +18,7 @@ export default function NavBar() {
 
       <Navbar.Toggle />
       <Navbar.Collapse>
-        <Navbar.Link href="/home">
+        <Navbar.Link href="/">
           <span className="text-black hover:text-orange-600">Inicio</span>
         </Navbar.Link>
         <Navbar.Link href="/notification">
@@ -26,7 +26,7 @@ export default function NavBar() {
             Notificaciones
           </span>
         </Navbar.Link>
-        <Navbar.Link href="/">
+        <Navbar.Link href="/descargar">
           <span className="text-black hover:text-orange-600">
             Descargar App
           </span>
