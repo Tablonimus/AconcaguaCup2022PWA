@@ -12,13 +12,26 @@ import h7 from "../../assets/images/h7.jpg";
 export default function Carru() {
   return (
     <Carousel>
-      <img src={h1} alt="..." className="object-cover rounded-lg h-96" />
-      <img src={h2} alt="..." className="object-cover rounded-lg h-96" />
-      <img src={h3} alt="..." className="object-cover rounded-lg h-96" />
-      <img src={h4} alt="..." className="object-cover rounded-lg h-96" />
-      <img src={h5} alt="..." className="object-cover rounded-lg h-96" />
-      <img src={h6} alt="..." className="object-cover rounded-lg h-96" />
-      <img src={h7} alt="..." className="object-cover rounded-lg h-96" />
+        <a
+        href="https://www.facebook.com/media/set?vanity=aconcaguacup&set=a.533033215504757"
+        target="_blank"
+        className="object-cover flex rounded-lg flex flex-col items-center"
+      >
+        <h1 className="text-md font-bold mt-10">
+          Visitá el album de fotos de la primera jornada!▶
+        </h1>
+        <img src={h7} alt="..." className="object-cover rounded-lg h-96" />
+      </a>
+        <a
+        href="https://www.instagram.com/p/CkgVi9NrfcW/?igshid=YmMyMTA2M2Y%3D"
+        target="_blank"
+        className="object-cover flex rounded-lg flex flex-col items-center"
+      >
+        <h1 className="text-md font-bold mt-10">
+         Mirá las fotos de Instagram! ▶
+        </h1>
+        <img src={h4} alt="..." className="object-cover rounded-lg h-96" />
+      </a>
     </Carousel>
   );
 }
