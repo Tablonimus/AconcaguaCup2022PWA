@@ -36,14 +36,14 @@ export default function Home() {
     <div className="flex flex-col justify-between gap-5  w-full items-center">
       <NavBar />
      
-      <div className="opacity-100 flex flex-row fixed bottom-5 right-5 lg:bottom-20 lg:right-24 z-30 items-center justify-center bg-[#F6D50E] w-14 h-14 rounded-full shadow-lg border ring ring-red-500 border-[#14ABD5]">
+      <div className="opacity-100 flex flex-row fixed bottom-5 right-5 lg:bottom-20 lg:right-24 z-30 items-center justify-center bg-[#F6D50E] w-14 h-14 rounded-full shadow-lg border ring ring-blue-500 border-[#14ABD5]">
         <Link to="/notification">
           <button className="rounded-full font-serif">
             <h1 className="text-4xl">🔔</h1>
             {/* <img src={bell} /> */}
           </button>
           <h1 className="absolute text-black top-2 left-5  font-bold text-xl">
-            1
+            0
           </h1>
         </Link>
       </div>

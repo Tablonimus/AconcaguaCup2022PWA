@@ -75,7 +75,7 @@ export default function Notif() {
 
         <div className="flex flex-col gap-2">
           <div className="bg-gray-100 rounded-lg shadow-lg ring p-5 m-2">
-            <h5 className="font-bold">18:08 - El acto inaugural comienza en breve!</h5>
+            <h5 className="font-bold">15:00 - Arranca el torneo!</h5>
           </div>
           {/*    <div className="bg-gray-100 rounded-lg shadow-lg ring p-5 m-2">
             <h5 className="font-bold">18:00 - Reunion con Ariel</h5>
