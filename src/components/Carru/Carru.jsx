@@ -12,7 +12,17 @@ import h7 from "../../assets/images/h7.jpg";
 export default function Carru() {
   return (
     <Carousel>
-        <a
+      <a
+        href="https://www.facebook.com/media/set?vanity=aconcaguacup&set=a.533033215504757"
+        target="_blank"
+        className="object-cover flex rounded-lg flex flex-col items-center"
+      >
+        <h1 className="text-md font-bold mt-10">
+          Album de fotos de la primera fecha!▶
+        </h1>
+        <img src={h3} alt="..." className="object-cover rounded-lg h-96" />
+      </a>
+      <a
         href="https://www.facebook.com/media/set?vanity=aconcaguacup&set=a.533033215504757"
         target="_blank"
         className="object-cover flex rounded-lg flex flex-col items-center"
@@ -22,13 +32,13 @@ export default function Carru() {
         </h1>
         <img src={h7} alt="..." className="object-cover rounded-lg h-96" />
       </a>
-        <a
+      <a
         href="https://www.instagram.com/p/CkgVi9NrfcW/?igshid=YmMyMTA2M2Y%3D"
         target="_blank"
         className="object-cover flex rounded-lg flex flex-col items-center"
       >
         <h1 className="text-md font-bold mt-10">
-         Mirá las fotos de Instagram! ▶
+          Mirá las fotos de Instagram! ▶
         </h1>
         <img src={h4} alt="..." className="object-cover rounded-lg h-96" />
       </a>

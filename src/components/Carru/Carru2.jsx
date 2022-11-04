@@ -11,17 +11,25 @@ import h7 from "../../assets/images/h7.jpg";
 
 export default function Carru2() {
   return (
-    <Carousel indicators={false} slide={false}>
+    <Carousel indicators={true} slide={true}>
       {/* <img src={h4} alt="..." className="object-cover rounded-lg h-96" /> */}
       {/* <img src={h5} alt="..." className="object-cover rounded-lg h-96" /> */}
       {/* <img src={h6} alt="..." className="object-cover rounded-lg h-96" /> */}
+      <a
+        href="https://www.instagram.com/p/CkjFnpMJNFA/"
+        target="_blank"
+        className="object-cover flex rounded-lg flex flex-col items-center"
+      >
+        <h1 className="text-md font-bold mt-10">Lo que dejó la fecha uno ▶</h1>
+        <img src={h6} alt="..." className="object-cover rounded-lg h-96" />
+      </a>
       <a
         href="https://www.instagram.com/reel/CkgMcgMJXD4/?igshid=YmMyMTA2M2Y%3D"
         target="_blank"
         className="object-cover flex rounded-lg flex flex-col items-center"
       >
         <h1 className="text-md font-bold mt-10">
-         Te mostramos como fue la ceremonia del Miercoles▶
+          Te mostramos como fue la ceremonia del Miercoles 02/11▶
         </h1>
         <img src={h1} alt="..." className="object-cover rounded-lg h-96" />
       </a>
