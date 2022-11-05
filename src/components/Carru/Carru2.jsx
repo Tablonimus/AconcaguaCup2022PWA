@@ -12,9 +12,7 @@ import h7 from "../../assets/images/h7.jpg";
 export default function Carru2() {
   return (
     <Carousel indicators={true} slide={true}>
-      {/* <img src={h4} alt="..." className="object-cover rounded-lg h-96" /> */}
-      {/* <img src={h5} alt="..." className="object-cover rounded-lg h-96" /> */}
-      {/* <img src={h6} alt="..." className="object-cover rounded-lg h-96" /> */}
+      
       <a
         href="https://www.instagram.com/p/CkjFnpMJNFA/"
         target="_blank"

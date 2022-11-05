@@ -125,7 +125,7 @@ export default function Cronograma() {
               <Tabs.Item
                 title="Vie 04/11"
                 /*   icon={HiAdjustments} */
-                active={true}
+    
               >
                 <div className="flex flex-col items-center">
                   {/* Hace Click en el evento para conocer la ubicación */}
@@ -164,6 +164,7 @@ export default function Cronograma() {
               <Tabs.Item
                 title="Sab 05/11"
                 /*  icon={HiClipboardList} */
+                active={true}
               >
                 <div className="flex flex-col items-center">
                   {/* Hace Click en el evento para conocer la ubicación */}
