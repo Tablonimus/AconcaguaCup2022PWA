@@ -5,14 +5,32 @@ import { Carousel } from "flowbite-react";
 // import h2 from "../../assets/images/h2.jpg";
 // import h3 from "../../assets/images/h3.jpg";
 import h1 from "../../assets/images/h1.jpg";
-import h5 from "../../assets/images/h5.jpg";
+
 import h6 from "../../assets/images/h6.jpg";
-import h7 from "../../assets/images/h7.jpg";
+import h8 from "../../assets/images/h8.jpg";
+import h9 from "../../assets/images/h9.jpg";
 
 export default function Carru2() {
   return (
     <Carousel indicators={true} slide={true}>
-      
+      <a
+        href="https://www.instagram.com/p/CkjFnpMJNFA/"
+        target="_blank"
+        className="object-cover flex rounded-lg flex flex-col items-center"
+      >
+        <h1 className="text-md font-bold mt-10">
+          07/11 - Despedida en "Aguas del Pizarro" ▶
+        </h1>
+        <img src={h9} alt="..." className="object-cover rounded-lg h-96" />
+      </a>
+      <a
+        href="https://www.instagram.com/p/CkjFnpMJNFA/"
+        target="_blank"
+        className="object-cover flex rounded-lg flex flex-col items-center"
+      >
+        <h1 className="text-md font-bold mt-10">06/11 - Aconcagualandia ▶</h1>
+        <img src={h8} alt="..." className="object-cover rounded-lg h-96" />
+      </a>
       <a
         href="https://www.instagram.com/p/CkjFnpMJNFA/"
         target="_blank"
