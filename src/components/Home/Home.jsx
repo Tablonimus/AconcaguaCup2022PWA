@@ -47,8 +47,8 @@ export default function Home() {
           </h1>
         </Link>
       </div>
-      <Cronograma />
-      <div className="w-full  rounded-lg   flex flex-col lg:grid lg:grid-cols-2  justify-center items-center">
+      {/* <Cronograma /> */}
+      <div className="w-full  rounded-lg  mt-24 flex flex-col lg:grid lg:grid-cols-2  justify-center items-center">
         <div className="w-full  bg-[#F6D50E] rounded-b-lg lg:rounded-none  py-2 h-96 flex flex-col">
           <Carru2 />
         </div>
