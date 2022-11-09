@@ -75,15 +75,15 @@ export default function Notif() {
 
         <div className="flex flex-col gap-2">
        
-          <div className="bg-gray-100 rounded-lg shadow-lg ring p-5 m-2">
+      {/*     <div className="bg-gray-100 rounded-lg shadow-lg ring p-5 m-2">
             <h5 className="font-bold">Tarde Libre</h5>
-          </div>
-          <div className="bg-gray-100 rounded-lg shadow-lg ring p-5 m-2">
+          </div> */}
+        {/*   <div className="bg-gray-100 rounded-lg shadow-lg ring p-5 m-2">
             <h5 className="font-bold">08:30 - Arrancan las finales del torneo!</h5>
-          </div>
-          <div className="bg-gray-100 rounded-lg shadow-lg ring p-5 m-2">
+          </div> */}
+         {/*  <div className="bg-gray-100 rounded-lg shadow-lg ring p-5 m-2">
             <h5 className="font-bold">08:00 - Salidas del Hotel</h5>
-          </div>
+          </div> */}
           {/*    <div className="bg-gray-100 rounded-lg shadow-lg ring p-5 m-2">
             <h5 className="font-bold">18:00 - Reunion con Ariel</h5>
           </div> */}

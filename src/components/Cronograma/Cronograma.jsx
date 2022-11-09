@@ -4,61 +4,45 @@ import { Tabs } from "flowbite-react";
 import { Link } from "react-router-dom";
 import map from "../../assets/images/map.png";
 
-import ber from "../../assets/escudos/balonEnLaRed.png";
-import ber1 from "../../assets/pdf_documents/BALONENLARED.pdf";
+import alg from "../../assets/pdf2/ALGARROBO F.C.pdf";
+import falg from "../../assets/pdf2/alg.png";
 
-import ccc from "../../assets/escudos/ccConchali.png";
-import ccc1 from "../../assets/pdf_documents/COLO COLO CONCHALI.pdf";
+import arg from "../../assets/pdf2/ARGENTINO JUNIOR.pdf";
+import farg from "../../assets/pdf2/arg.png";
 
-import ccl from "../../assets/escudos/ccLarapinta.png";
-import ccl1 from "../../assets/pdf_documents/COLO COLO LARAPINTA.pdf";
+import ccl from "../../assets/pdf2/C.C LARAPINTA.pdf";
+import fccl from "../../assets/pdf2/ccl.png";
 
-import ccp from "../../assets/escudos/ccPudahuel.png";
-import ccp1 from "../../assets/pdf_documents/COLO COLO PUDAHUEL.pdf";
+import gab from "../../assets/pdf2/F.C.D. GABRIELA.pdf";
+import fgab from "../../assets/pdf2/gab.png";
 
-import cu from "../../assets/escudos/curicoUnido.png";
-import cu1 from "../../assets/pdf_documents/CURICO UNIDO.pdf";
+import reg from "../../assets/pdf2/H, 4TA REGION.pdf";
+import mai from "../../assets/pdf2/H.MAIPU.pdf";
+import freg from "../../assets/pdf2/reg.png";
 
-import ev from "../../assets/escudos/estrellaDeViluco.png";
-import ev1 from "../../assets/pdf_documents/ESTRELLA DE VILUCO.pdf";
+import leo from "../../assets/pdf2/LEONCITOS DE YUMBEL.pdf";
+import fleo from "../../assets/pdf2/leo.png";
 
-import ec from "../../assets/escudos/estrellasDeCodegua.png";
-import ec1 from "../../assets/pdf_documents/ESTRELLAS DE CODEGUA.pdf";
+import psg from "../../assets/pdf2/PSG-QUILICURA.pdf";
+import fpsg from "../../assets/pdf2/psg.jpg";
 
-import fess from "../../assets/escudos/FESS.png";
-import fess1 from "../../assets/pdf_documents/FUTBOL FES.pdf";
+import ale from "../../assets/pdf2/U DE C. VILLA ALEMANA.pdf";
+import fale from "../../assets/pdf2/ale.png";
 
-import flu from "../../assets/escudos/fluminense.png";
-import flu1 from "../../assets/pdf_documents/FLUMINENSE.pdf";
-
-import fpt from "../../assets/escudos/fpt.png";
-import fpt1 from "../../assets/pdf_documents/FUTBOL PARA TODOS.pdf";
-
-import gp from "../../assets/escudos/grandesPasos.png";
-import gp1 from "../../assets/pdf_documents/ACADEMIA GRANDES PASOS.pdf";
-
-import hua from "../../assets/escudos/huachipatoConchali.png";
-import hua1 from "../../assets/pdf_documents/HUACHIPATO CONCHALI.pdf";
-
-import ja from "../../assets/escudos/juanitaAguirre.png";
-import ja1 from "../../assets/pdf_documents/JUANITA AGUIRRE.pdf";
-
-import tp from "../../assets/escudos/talentoPetorquino.png";
-import tp1 from "../../assets/pdf_documents/TALENTO PETORQUINO.pdf";
-
-import alm from "../../assets/escudos/almafuerte.png";
-import alm1 from "../../assets/pdf_documents/ALMAFUERTE.pdf";
+import chi from "../../assets/pdf2/U DE CHILE.pdf";
+import fchi from "../../assets/pdf2/chi.png";
 
 export default function Cronograma() {
   return (
     <div className="mt-24 flex items center">
       <Tabs.Group aria-label="Tabs with icons" style="underline">
-        <Tabs.Item active={true} title="General" /*icon={map}*/>
+        <Tabs.Item  title="General" /*icon={map}*/>
           <div className="bg-white flex mb-3 flex-col items-center rounded-b-lg">
             {/*   <h5 className="font-bold text-black">Cronograma</h5> */}
             <Tabs.Group aria-label="Tabs with icons" style="underline">
               <Tabs.Item
-                title="Mie 02/11"
+                title="Mie 09/11"
+                /* active={true}  */
                 /*  icon={HiUserCircle} */
               >
                 <div className="flex flex-col items-center">
@@ -99,9 +83,10 @@ export default function Cronograma() {
                 </div>
               </Tabs.Item>
               <Tabs.Item
-                // active={true}
-                title="Jue 03/11"
+                active={true}
+                title="Jue 10/11"
                 /*  icon={MdDashboard} */
+
               >
                 <div className="flex flex-col items-center">
                   {/* Hace Click en el evento para conocer la ubicación */}
@@ -123,9 +108,8 @@ export default function Cronograma() {
                 </div>
               </Tabs.Item>
               <Tabs.Item
-                title="Vie 04/11"
+                title="Vie 11/11"
                 /*   icon={HiAdjustments} */
-    
               >
                 <div className="flex flex-col items-center">
                   {/* Hace Click en el evento para conocer la ubicación */}
@@ -162,7 +146,7 @@ export default function Cronograma() {
                 </div>
               </Tabs.Item>
               <Tabs.Item
-                title="Sab 05/11"
+                title="Sab 12/11"
                 /*  icon={HiClipboardList} */
                 active={true}
               >
@@ -200,7 +184,7 @@ export default function Cronograma() {
                   </div>
                 </div>
               </Tabs.Item>
-              <Tabs.Item /* active={true}  */ title="Dom 06/11">
+              <Tabs.Item  title="Dom 13/11">
                 <div className="flex flex-col items-center">
                   {/* Hace Click en el evento para conocer la ubicación */}
                   <div className="flex flex-col items-center border-y border-[#14ABD5]">
@@ -223,249 +207,169 @@ export default function Cronograma() {
             </Tabs.Group>
           </div>
         </Tabs.Item>
-        <Tabs.Item title="Descargar Cronograma" /*icon={map}*/>
+        <Tabs.Item active={true} title="Descargar Cronograma" /*icon={map}*/>
           <div className="flex flex-col items-center">
             <h5 className="mb-2">Descarga los horarios de tu equipo</h5>
             <div className="grid grid-cols-4 items-center gap-y-1">
               <a
-                href={alm1}
+                href={alg}
                 target="_blank"
                 rel="alm"
-                download="ALMAFUERTE.pdf"
+                download="ALGARROBO F.C.pdf"
                 className="flex flex-col border-x p-2 items-center"
               >
                 <span className="flex items-center justify-center flex-col ">
                   <img
-                    src={alm}
+                    src={falg}
                     className="w-14 h-14 rounded-full shadow-lg"
                     alt=""
                   />
                 </span>
-                <h5 className="text-sm">Almafuerte</h5>
+                <h5 className="text-sm">Algarrobo F.C</h5>
               </a>
               <a
-                href={ber1}
+                href={arg}
                 target="_blank"
-                rel="ber"
-                download="BALONENLARED.pdf"
+                rel="alm"
+                download="ARGENTINOS JUNIORS.pdf"
                 className="flex flex-col border-x p-2 items-center"
               >
                 <span className="flex items-center justify-center flex-col ">
                   <img
-                    src={ber}
+                    src={farg}
                     className="w-14 h-14 rounded-full shadow-lg"
                     alt=""
                   />
                 </span>
-                <h5 className="text-sm">Balon en la Red</h5>
+                <h5 className="text-sm">Argentinos Jr.</h5>
               </a>
               <a
-                href={ccc1}
+                href={ccl}
                 target="_blank"
-                rel="ber"
-                download="COLO COLO CONCHALI.pdf"
+                rel="alm"
+                download="C.C LARAPINTA.pdf"
                 className="flex flex-col border-x p-2 items-center"
               >
                 <span className="flex items-center justify-center flex-col ">
                   <img
-                    src={ccc}
+                    src={fccl}
                     className="w-14 h-14 rounded-full shadow-lg"
                     alt=""
                   />
                 </span>
-                <h5 className="text-sm">CC Conchali</h5>
+                <h5 className="text-sm">C.C Larapinta</h5>
               </a>
               <a
-                href={ccl1}
+                href={gab}
                 target="_blank"
-                rel="ber"
-                download="COLO COLO LARAPINTA.pdf"
+                rel="alm"
+                download="F.C.D. GABRIELA.pdf"
                 className="flex flex-col border-x p-2 items-center"
               >
                 <span className="flex items-center justify-center flex-col ">
                   <img
-                    src={ccl}
+                    src={fgab}
                     className="w-14 h-14 rounded-full shadow-lg"
                     alt=""
                   />
                 </span>
-                <h5 className="text-sm">CC Larapinta</h5>
+                <h5 className="text-sm">Dep. Gabriela</h5>
               </a>
               <a
-                href={ccp1}
+                href={reg}
                 target="_blank"
-                rel="ber"
-                download="COLO COLO PUDAHUEL.pdf"
+                rel="alm"
+                download="H, 4TA REGION.pdf"
                 className="flex flex-col border-x p-2 items-center"
               >
                 <span className="flex items-center justify-center flex-col ">
                   <img
-                    src={ccp}
+                    src={freg}
                     className="w-14 h-14 rounded-full shadow-lg"
                     alt=""
                   />
                 </span>
-                <h5 className="text-sm">CC Pudahuel</h5>
+                <h5 className="text-sm">Huachipato 4°Reg</h5>
               </a>
               <a
-                href={cu1}
+                href={mai}
                 target="_blank"
-                rel="ber"
-                download="CURICO UNIDO.pdf"
+                rel="alm"
+                download="H.MAIPU.pdf"
                 className="flex flex-col border-x p-2 items-center"
               >
                 <span className="flex items-center justify-center flex-col ">
                   <img
-                    src={cu}
+                    src={freg}
                     className="w-14 h-14 rounded-full shadow-lg"
                     alt=""
                   />
                 </span>
-                <h5 className="text-sm">Curico Unido</h5>
+                <h5 className="text-sm">Huachipato Maipu</h5>
               </a>
               <a
-                href={ev1}
+                href={leo}
                 target="_blank"
-                rel="ber"
-                download="ESTRELLA DE VILUCO.pdf"
+                rel="alm"
+                download="LEONCITOS DE YUMBEL.pdf"
                 className="flex flex-col border-x p-2 items-center"
               >
                 <span className="flex items-center justify-center flex-col ">
                   <img
-                    src={ev}
+                    src={fleo}
                     className="w-14 h-14 rounded-full shadow-lg"
                     alt=""
                   />
                 </span>
-                <h5 className="text-sm">Nueva Estrella</h5>
+                <h5 className="text-sm">Leoncitos</h5>
               </a>
               <a
-                href={ec1}
+                href={psg}
                 target="_blank"
-                rel="ber"
-                download="ESTRELLAS DE CODEGUA.pdf"
+                rel="alm"
+                download="PSG-QUILICURA.pdf"
                 className="flex flex-col border-x p-2 items-center"
               >
                 <span className="flex items-center justify-center flex-col ">
                   <img
-                    src={ec}
+                    src={fpsg}
                     className="w-14 h-14 rounded-full shadow-lg"
                     alt=""
                   />
                 </span>
-                <h5 className="text-sm">Estrellas</h5>
+                <h5 className="text-sm">PSG</h5>
               </a>
               <a
-                href={fess1}
+                href={ale}
                 target="_blank"
-                rel="ber"
-                download="FUTBOL FES.pdf"
+                rel="alm"
+                download="U DE C. VILLA ALEMANA.pdf"
                 className="flex flex-col border-x p-2 items-center"
               >
                 <span className="flex items-center justify-center flex-col ">
                   <img
-                    src={fess}
+                    src={fale}
                     className="w-14 h-14 rounded-full shadow-lg"
                     alt=""
                   />
                 </span>
-                <h5 className="text-sm">FESS</h5>
+                <h5 className="text-sm">U - Villa Alemana</h5>
               </a>
               <a
-                href={flu1}
+                href={chi}
                 target="_blank"
-                rel="ber"
-                download="FLUMINENSE.pdf"
+                rel="alm"
+                download="U DE CHILE.pdf"
                 className="flex flex-col border-x p-2 items-center"
               >
                 <span className="flex items-center justify-center flex-col ">
                   <img
-                    src={flu}
+                    src={fchi}
                     className="w-14 h-14 rounded-full shadow-lg"
                     alt=""
                   />
                 </span>
-                <h5 className="text-sm">Fluminense</h5>
-              </a>
-              <a
-                href={fpt1}
-                target="_blank"
-                rel="ber"
-                download="FUTBOL PARA TODOS.pdf"
-                className="flex flex-col border-x p-2 items-center"
-              >
-                <span className="flex items-center justify-center flex-col ">
-                  <img
-                    src={fpt}
-                    className="w-14 h-14 rounded-full shadow-lg"
-                    alt=""
-                  />
-                </span>
-                <h5 className="text-sm">Fut. Para Todos</h5>
-              </a>
-              <a
-                href={gp1}
-                target="_blank"
-                rel="ber"
-                download="ACADEMIA GRANDES PASOS.pdf"
-                className="flex flex-col border-x p-2 items-center"
-              >
-                <span className="flex items-center justify-center flex-col ">
-                  <img
-                    src={gp}
-                    className="w-14 h-14 rounded-full shadow-lg"
-                    alt=""
-                  />
-                </span>
-                <h5 className="text-sm">Grandes Pasos</h5>
-              </a>
-              <a
-                href={hua1}
-                target="_blank"
-                rel="ber"
-                download="HUACHIPATO CONCHALI.pdf"
-                className="flex flex-col border-x p-2 items-center"
-              >
-                <span className="flex items-center justify-center flex-col ">
-                  <img
-                    src={hua}
-                    className="w-14 h-14 rounded-full shadow-lg"
-                    alt=""
-                  />
-                </span>
-                <h5 className="text-sm">Huachipato</h5>
-              </a>
-              <a
-                href={ja1}
-                target="_blank"
-                rel="ber"
-                download="JUANITA AGUIRRE.pdf"
-                className="flex flex-col border-x p-2 items-center"
-              >
-                <span className="flex items-center justify-center flex-col ">
-                  <img
-                    src={ja}
-                    className="w-14 h-14 rounded-full shadow-lg"
-                    alt=""
-                  />
-                </span>
-                <h5 className="text-sm">Juanita Aguirre</h5>
-              </a>
-              <a
-                href={tp1}
-                target="_blank"
-                rel="ber"
-                download="TALENTO PETORQUINO.pdf"
-                className="flex flex-col border-x p-2 items-center"
-              >
-                <span className="flex items-center justify-center flex-col ">
-                  <img
-                    src={tp}
-                    className="w-14 h-14 rounded-full shadow-lg"
-                    alt=""
-                  />
-                </span>
-                <h5 className="text-sm">Tal. Petorquino</h5>
+                <h5 className="text-sm">U de Chile</h5>
               </a>
             </div>
           </div>
