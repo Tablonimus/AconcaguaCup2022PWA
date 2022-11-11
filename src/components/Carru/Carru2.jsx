@@ -15,9 +15,9 @@ import h12 from "../../assets/images/h12.jpg";
 
 export default function Carru2() {
   return (
-    <Carousel indicators={true} slide={true}>
+    <Carousel indicators={true} slide={true} slideInterval={4000}>
       <a
-        href="https://www.facebook.com/media/set/?set=a.538752278266184&type=3"
+        href="https://www.facebook.com/media/set/?set=a.539082708233141&type=3"
         target="_blank"
         className="object-cover flex rounded-lg flex flex-col items-center"
       >
