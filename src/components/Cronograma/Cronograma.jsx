@@ -83,7 +83,7 @@ export default function Cronograma() {
                 </div>
               </Tabs.Item>
               <Tabs.Item
-                active={true}
+               
                 title="Jue 10/11"
                 /*  icon={MdDashboard} */
 

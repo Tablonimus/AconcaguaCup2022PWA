@@ -6,19 +6,23 @@ import h2 from "../../assets/images/h2.jpg";
 import h3 from "../../assets/images/h3.jpg";
 import h4 from "../../assets/images/h4.jpg";
 import h5 from "../../assets/images/h5.jpg";
-
 import h7 from "../../assets/images/h7.jpg";
+import h13 from "../../assets/images/h13.jpg";
+
 
 export default function Carru() {
   return (
-    <Carousel>
+    <Carousel slideInterval={4000}>
+
       <a
-        href="https://www.facebook.com/media/set/?set=a.534783745329704&type=3"
+        href="https://www.facebook.com/media/set/?set=a.538044101670335&type=3"
         target="_blank"
         className="object-cover flex rounded-lg flex flex-col items-center"
       >
-        <h1 className="text-md font-bold mt-10">05/11 - Finales ▶</h1>
-        <img src={h5} alt="..." className="object-cover rounded-lg h-96" />
+        <h1 className="text-md font-bold mt-10">
+          09/11 - Acto Inaugural | 2° Edicion▶
+        </h1>
+        <img src={h13} alt="..." className="object-cover rounded-lg h-96" />
       </a>
       <a
         href="https://www.facebook.com/media/set/?set=a.534785245329554&type=3"
