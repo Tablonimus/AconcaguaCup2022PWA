@@ -8,6 +8,10 @@ import Carru from "../Carru/Carru";
 import bell from "../../assets/images/bell.png";
 import Carru2 from "../Carru/Carru2";
 import PWAPrompt from "react-ios-pwa-prompt";
+import ReactPlayer from "react-player";
+import tiktok from "../../assets/images/tiktok.png";
+import face from "../../assets/images/face.png";
+import insta from "../../assets/images/insta.png";
 
 // // Import the functions you need from the SDKs you need
 // import { initializeApp } from "firebase/app";
@@ -48,7 +52,7 @@ export default function Home() {
         </Link>
       </div>
       <Cronograma />
-      <div className="w-full  rounded-lg  mt-24 flex flex-col lg:grid lg:grid-cols-2  justify-center items-center">
+      <div className="w-full  rounded-lg flex flex-col lg:grid lg:grid-cols-2  justify-center items-center">
         <div className="w-full  bg-[#F6D50E] rounded-b-lg lg:rounded-none  py-2 h-96 flex flex-col">
           <Carru2 />
         </div>
@@ -56,6 +60,38 @@ export default function Home() {
         <div className="w-full bg-[#F6D50E] lg:px-1 py-2 h-96  flex flex-col">
           <Carru />
         </div>
+      </div>
+      <div className="flex flex-col gap-4 items-center">
+        <a href="https://www.tiktok.com/@aconcaguacup">
+          <div className="flex flex-row items-center gap-1 hover:bg-gray-200 rounded-full w-56 border p-2">
+            <img
+              src={tiktok}
+              alt=""
+              className="w-10 h-10 rounded-full shadow-lg object-cover"
+            />
+            <span className="font-bold text-xl">@aconcaguacup</span>
+          </div>
+        </a>
+        <a href="https://www.facebook.com/aconcaguacup">
+          <div className="flex flex-row items-center gap-1 hover:bg-gray-200 rounded-full w-56 border p-2">
+            <img
+              src={face}
+              alt=""
+              className="w-10 h-10 rounded-full shadow-lg object-cover"
+            />
+            <span className="font-bold text-xl">Aconcagua Cup</span>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/aconcaguacup/">
+          <div className="flex flex-row items-center gap-1 hover:bg-gray-200 rounded-full w-56 border p-2">
+            <img
+              src={insta}
+              alt=""
+              className="w-10 h-10 rounded-full shadow-lg object-cover"
+            />
+            <span className="font-bold text-xl">aconcaguacup</span>
+          </div>
+        </a>
       </div>
       <div className="w-full">
         <Header />

@@ -36,7 +36,7 @@ export default function Cronograma() {
   return (
     <div className="mt-24 flex items center">
       <Tabs.Group aria-label="Tabs with icons" style="underline">
-        <Tabs.Item  title="General" /*icon={map}*/>
+        <Tabs.Item active={true} title="General" /*icon={map}*/>
           <div className="bg-white flex mb-3 flex-col items-center rounded-b-lg">
             {/*   <h5 className="font-bold text-black">Cronograma</h5> */}
             <Tabs.Group aria-label="Tabs with icons" style="underline">
@@ -83,10 +83,8 @@ export default function Cronograma() {
                 </div>
               </Tabs.Item>
               <Tabs.Item
-               
                 title="Jue 10/11"
                 /*  icon={MdDashboard} */
-
               >
                 <div className="flex flex-col items-center">
                   {/* Hace Click en el evento para conocer la ubicación */}
@@ -148,7 +146,6 @@ export default function Cronograma() {
               <Tabs.Item
                 title="Sab 12/11"
                 /*  icon={HiClipboardList} */
-                active={true}
               >
                 <div className="flex flex-col items-center">
                   {/* Hace Click en el evento para conocer la ubicación */}
@@ -184,7 +181,7 @@ export default function Cronograma() {
                   </div>
                 </div>
               </Tabs.Item>
-              <Tabs.Item  title="Dom 13/11">
+              <Tabs.Item active={true} title="Dom 13/11">
                 <div className="flex flex-col items-center">
                   {/* Hace Click en el evento para conocer la ubicación */}
                   <div className="flex flex-col items-center border-y border-[#14ABD5]">
@@ -207,7 +204,7 @@ export default function Cronograma() {
             </Tabs.Group>
           </div>
         </Tabs.Item>
-        <Tabs.Item active={true} title="Descargar Cronograma" /*icon={map}*/>
+        <Tabs.Item title="Descargar Cronograma" /*icon={map}*/>
           <div className="flex flex-col items-center">
             <h5 className="mb-2">Descarga los horarios de tu equipo</h5>
             <div className="grid grid-cols-4 items-center gap-y-1">

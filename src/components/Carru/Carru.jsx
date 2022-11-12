@@ -8,12 +8,21 @@ import h4 from "../../assets/images/h4.jpg";
 import h5 from "../../assets/images/h5.jpg";
 import h7 from "../../assets/images/h7.jpg";
 import h13 from "../../assets/images/h13.jpg";
-
+import h14 from "../../assets/images/h14.jpg";
 
 export default function Carru() {
   return (
     <Carousel slideInterval={4000}>
-
+      <a
+        href="https://www.facebook.com/media/set/?set=a.538044101670335&type=3"
+        target="_blank"
+        className="object-cover flex rounded-lg flex flex-col items-center"
+      >
+        <h1 className="text-md font-bold mt-10">
+          11/11 - Visita a "Fabrica Chocolezza"▶
+        </h1>
+        <img src={h14} alt="..." className="object-cover rounded-lg h-96" />
+      </a>
       <a
         href="https://www.facebook.com/media/set/?set=a.538044101670335&type=3"
         target="_blank"
