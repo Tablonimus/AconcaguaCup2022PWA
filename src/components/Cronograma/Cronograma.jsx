@@ -55,7 +55,7 @@ export default function Cronograma() {
             {/*   <h5 className="font-bold text-black">Cronograma</h5> */}
             <Tabs.Group aria-label="Tabs with icons" style="underline">
               <Tabs.Item
-                title="Mie 09/11"
+                title="Mie 16/11"
                 /* active={true}  */
                 /*  icon={HiUserCircle} */
               >
@@ -97,7 +97,7 @@ export default function Cronograma() {
                 </div>
               </Tabs.Item>
               <Tabs.Item
-                title="Jue 10/11"
+                title="Jue 17/11"
                 active={true}
                 /*  icon={MdDashboard} */
               >
@@ -121,7 +121,7 @@ export default function Cronograma() {
                 </div>
               </Tabs.Item>
               <Tabs.Item
-                title="Vie 11/11"
+                title="Vie 18/11"
                 /*   icon={HiAdjustments} */
               >
                 <div className="flex flex-col items-center">
@@ -159,7 +159,7 @@ export default function Cronograma() {
                 </div>
               </Tabs.Item>
               <Tabs.Item
-                title="Sab 12/11"
+                title="Sab 19/11"
                 /*  icon={HiClipboardList} */
               >
                 <div className="flex flex-col items-center">
@@ -196,7 +196,7 @@ export default function Cronograma() {
                   </div>
                 </div>
               </Tabs.Item>
-              <Tabs.Item active={true} title="Dom 13/11">
+              <Tabs.Item active={true} title="Dom 20/11">
                 <div className="flex flex-col items-center">
                   {/* Hace Click en el evento para conocer la ubicación */}
                   <div className="flex flex-col items-center border-y border-[#14ABD5]">
